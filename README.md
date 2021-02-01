@@ -87,7 +87,7 @@ from northpitch.pitch import Pitch
 fig, ax = plt.subplots()
 pitch = Pitch(scale=(100, 100)) # Default (Opta)
 pitch.create_pitch(ax)
-passes = [(30,60, 20,25), (40,20, 30,50)]
+passes = [(50,50, 60,40)]
 pitch.draw_lines(ax, passes)
 plt.ylim(pitch.ylim)
 plt.xlim(pitch.xlim)
@@ -102,7 +102,7 @@ from northpitch.pitch import Pitch
 fig, ax = plt.subplots()
 pitch = Pitch(scale=(120, 80)) # (StatsBomb)
 pitch.create_pitch(ax)
-passes = [(30,60, 20,25), (40,20, 30,50)]
+passes = [(50,50, 60,40)]
 pitch.draw_lines(ax, passes)
 plt.ylim(pitch.ylim)
 plt.xlim(pitch.xlim)
