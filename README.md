@@ -35,7 +35,7 @@ from northpitch.pitch import overlay_surface
 frame = tracking_frames[n]
 surface = pitch_control_function(frame)
 
-fig, ax = draw(frame, deltas=True, title="NorthPlotter example")
+fig, ax = draw_tracking_frame(frame, deltas=True, title="NorthPlotter example")
 contours = overlay_surface(ax, surface)
 
 plt.colorbar(contours, ax=ax)
